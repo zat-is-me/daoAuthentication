@@ -4,10 +4,10 @@
 3. Configure the SecurityFilterChain bean
 
 
-      @Bean
-      SecurityFilterChain defaultSecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
-         --- your filter chain ---
-      }
+         @Bean
+         SecurityFilterChain defaultSecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
+            --- your filter chain ---
+         }
 4. And create other customUserDetails class and the implement spring security UserDetails interface
 5. Then create CustomService class which implements the Spring Security UserDetails and override loadUserByUsername(Sting username)
 6. 
